@@ -1,0 +1,9 @@
+import {PageHead,Sec} from '@/components/ui'; import {VALUES} from '@/lib/content';
+export const metadata={title:'About'};
+export default function P(){return <><PageHead title="About AfriChild" lead="A structured, value-centred child development programme delivered inside partner schools."/>
+<Sec><h2 className="text-2xl font-bold">What we are</h2><p className="mt-2 max-w-3xl">AfriChild is a school-based programme of facilitated workshops. It is not an online school and has no student accounts or online classes. Sessions take place in person at partner schools.</p>
+<h2 className="mt-8 text-2xl font-bold">Mission</h2><p className="mt-2 max-w-3xl">To invest in the generation of tomorrow by building the right knowledge, values, and mindset in children today, inside the schools where they spend most of their waking hours.</p>
+<h2 className="mt-8 text-2xl font-bold">Vision</h2><p className="mt-2 max-w-3xl">A continent where every child between Grade 1 and Grade 10 enters adulthood equipped with self-awareness, vocational clarity, entrepreneurial courage, and a strong moral compass.</p></Sec>
+<Sec tint><h2 className="text-2xl font-bold">Our values: GREAT</h2><dl className="mt-4 grid gap-4 md:grid-cols-5">{VALUES.map(([a,b])=><div key={a}><dt className="font-display text-xl font-bold text-forest">{a}</dt><dd className="text-base">{b}</dd></div>)}</dl></Sec>
+<Sec><h2 className="text-2xl font-bold">Our founder</h2><p className="mt-2 max-w-3xl">Jane Ochuma, PHRi, is a Professional in Human Resource Management with a background in human capital development and workforce readiness. Shaped by her faith, her experience as a mother and her insight into what the labour market demands, she founded AfriChild to bridge the gap between school learning and real-life readiness.</p>
+<p className="mt-6 text-base">Organisational information: <em>[Add registration status and number, address, and trustees once confirmed.]</em></p></Sec></>}

@@ -1,0 +1,5 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply font-body bg-chalk text-ink text-lg leading-relaxed}
+h1,h2,h3{@apply font-display tracking-tight text-forest}
+:focus-visible{outline:3px solid #F2B705;outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.rise{animation:rise .7s ease both}@keyframes rise{from{opacity:0;transform:translateY(14px)}}}
