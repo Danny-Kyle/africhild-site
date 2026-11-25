@@ -1,8 +1,10 @@
 export const SITE = {
   name: 'The AfriChild Education and Development Initiative', short: 'AfriChild',
   tagline: 'Equipping Children. Empowering Schools. Shaping Futures.',
-  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '',
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '',
+  // Fill these in. Public by design. whatsapp = international format, digits only (e.g. 2348012345678).
+  email: 'theafrichildinitiative@gmail.com',         // general enquiries
+  schoolsEmail: 'theafrichildinitiative@gmail.com',  // optional; falls back to email
+  whatsapp: '2348132220737',
 };
 export const NAV = [['About','/about/'],['Programmes','/programmes/'],['For Schools','/for-schools/'],['Get Involved','/get-involved/'],['Updates','/updates/'],['Resources','/resources/'],['Contact','/contact/']];
 export const PILLARS = [

@@ -1,6 +1,6 @@
-# AfriChild MVP site (free tier)
-1. `cp .env.example .env.local` and fill in values (free Web3Forms key).
-2. `npm install && npm run dev` (http://localhost:3000)
-3. `npm run build` creates the static site in `out/`.
-4. Deploy `out/` free on Cloudflare Pages, Netlify or Vercel (connect the Git repo; build command `npm run build`, output `out`).
-Updates: edit `UPDATES` in `lib/content.ts`. Before launch: replace Draft text on Privacy and Safeguarding.
+# AfriChild MVP site (free tier, no third-party services)
+1. Set email(s) and WhatsApp number in `lib/content.ts` (SITE).
+2. `npm install && npm run dev`
+3. `npm run build:prod` builds `out/` and fails if drafts, placeholders or missing contact details remain.
+4. Deploy `out/` free (Cloudflare Pages or Netlify apply `public/_headers`; Vercel and GitHub Pages need their own header config).
+Updates: edit `UPDATES` in `lib/content.ts`.
