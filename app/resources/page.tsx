@@ -2,7 +2,7 @@ import { PageHead, Sec } from "@/components/ui";
 export const metadata = { title: "Resources" };
 
 const RESOURCES=[
-  {title:'AfriChild School Partnership Proposal',file:'/resources/AfriChild-School-Partnership-Proposal-1.pdf',note:'PDF'},
+  {title:'AfriChild School Partnership Proposal' ,file:'/resources/AfriChild-School-Partnership-Proposal-1.pdf',note:'PDF'},
 ];
 
 export default function P(){return <><PageHead title="Resources" lead="Approved materials for schools and partners."/>
