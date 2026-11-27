@@ -1,7 +1,8 @@
 import Link from 'next/link';
 export const Wrap=({children,className=''}:{children:React.ReactNode;className?:string})=><div className={`mx-auto max-w-5xl px-5 ${className}`}>{children}</div>;
-export const Btn=({href,children,alt}:{href:string;children:React.ReactNode;alt?:boolean})=>
- <Link href={href} className={`inline-block rounded-full px-6 py-3 font-display font-semibold ${alt?'border-2 border-forest text-forest hover:bg-mist':'bg-sun text-ink hover:brightness-95'}`}>{children}</Link>;
+const V={primary:'bg-sun text-ink hover:brightness-95',outline:'border-2 border-forest text-forest hover:bg-mist',onDark:'border-2 border-chalk text-chalk hover:bg-chalk hover:text-forest'};
+export const Btn=({href,children,variant='primary'}:{href:string;children:React.ReactNode;variant?:keyof typeof V})=>
+ <Link href={href} className={`inline-block rounded-full px-6 py-3 font-display font-semibold ${V[variant]}`}>{children}</Link>;
 export const PageHead=({title,lead}:{title:string;lead?:string})=>
  <header className="bg-mist py-14"><Wrap><h1 className="text-4xl md:text-5xl font-bold">{title}</h1>{lead&&<p className="mt-4 max-w-2xl">{lead}</p>}</Wrap></header>;
 export const Sec=({children,tint}:{children:React.ReactNode;tint?:boolean})=><section className={`py-12 ${tint?'bg-mist':''}`}><Wrap>{children}</Wrap></section>;
